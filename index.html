@@ -7,107 +7,105 @@
     <style>
         body {
             margin: 0;
-            font-family: 'Segoe UI', sans-serif;
+            font-family: 'Trebuchet MS', sans-serif;
+            background: url('https://images.unsplash.com/photo-1516542076529-1ea3854896f2') no-repeat center center/cover;
             height: 100vh;
-            background: url('https://images.unsplash.com/photo-1588776814546-ec7e1b64c0f0') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #f5d98b;
             position: relative;
-            color: white;
         }
 
-        /* Dark overlay */
+        /* Dark golden overlay */
         body::before {
             content: "";
             position: absolute;
-            top: 0; left: 0;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.6);
-            z-index: 0;
+            background: rgba(20, 10, 0, 0.75);
+            backdrop-filter: blur(3px);
         }
 
-        .container {
+        .content {
             position: relative;
             z-index: 1;
-            text-align: center;
-            padding-top: 80px;
+            max-width: 1100px;
+            padding: 20px;
         }
 
         h1 {
             font-size: 48px;
-            margin-bottom: 10px;
-            color: #f1c40f;
-            text-shadow: 0 0 20px rgba(241,196,15,0.8);
+            margin-bottom: 15px;
+            text-shadow: 0 0 20px rgba(255,215,0,0.9);
         }
 
         h2 {
             font-weight: normal;
-            margin-bottom: 60px;
+            margin-bottom: 50px;
             font-size: 22px;
         }
 
-        .button-container {
+        .buttons {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 25px;
-            max-width: 1100px;
-            margin: auto;
-            padding: 20px;
         }
 
-        .card-button {
-            background: rgba(255, 215, 0, 0.9);
-            color: #2c3e50;
+        .btn {
+            background: #f5d98b;
+            color: #2c2c2c;
             padding: 25px;
             border-radius: 20px;
             font-size: 18px;
             font-weight: bold;
             cursor: pointer;
-            transition: 0.3s;
-            text-align: center;
+            transition: 0.3s ease;
         }
 
-        .card-button:hover {
+        .btn:hover {
             transform: scale(1.05);
-            background: #f1c40f;
+            background: #ffe6a7;
         }
 
         footer {
             position: absolute;
-            bottom: 20px;
-            width: 100%;
-            text-align: center;
+            bottom: 15px;
             font-size: 14px;
-            color: #f1c40f;
+            color: #f5d98b;
+            z-index: 1;
         }
 
-        @media(max-width: 768px) {
-            h1 {
-                font-size: 34px;
-            }
+        @media(max-width: 768px){
+            h1 { font-size: 32px; }
         }
     </style>
 </head>
 
 <body>
 
-<div class="container">
-    <h1>Steps to Become a Dermatologist 👩‍⚕️</h1>
+<div class="content">
+    <h1>✨ Steps to Become a Dermatologist 👩‍⚕️</h1>
     <h2>Where Science Meets Skin</h2>
 
-    <div class="button-container">
-        <div class="card-button">Motivation & Career Guidance</div>
-        <div class="card-button">Physics Preparation</div>
-        <div class="card-button">Chemistry Preparation</div>
-        <div class="card-button">Mathematics Practice</div>
-        <div class="card-button">Botany Preparation</div>
-        <div class="card-button">Zoology Preparation</div>
-        <div class="card-button">Mind Development</div>
-        <div class="card-button">NEET Strategy & Roadmap</div>
+    <div class="buttons">
+        <div class="btn">Motivation Videos</div>
+        <div class="btn">Physics</div>
+        <div class="btn">Chemistry</div>
+        <div class="btn">Mathematics</div>
+        <div class="btn">Botany</div>
+        <div class="btn">Zoology</div>
+        <div class="btn">Mind Games</div>
+        <div class="btn">NEET Strategy</div>
     </div>
 </div>
 
 <footer>
-    © 2026 | Created by Amina Fatima | Future Dermatologist ✨
+© 2026 | Created by Amina Fatima
 </footer>
 
 </body>
